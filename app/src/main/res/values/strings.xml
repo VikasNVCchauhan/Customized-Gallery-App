@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FaceTokImageUploadDemo</string>
+
+    <string name="spinner_heading">All Images</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

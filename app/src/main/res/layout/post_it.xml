@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:padding="1dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager_post_it"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorOrange">
+
+                </android.support.v4.view.ViewPager>
+
+                <LinearLayout
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_clear_black_24dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:paddingLeft="7dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingRight="7dp"
+                    android:background="@drawable/background_selected_images_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POST"
+                    android:textColor="@android:color/white"
+                  />
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="2dp"
+        android:paddingTop="1dp"
+        android:paddingRight="2dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp">
+
+            <EditText
+                android:id="@+id/edit_text_description_post_it"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="50"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="Write about your post ( i.e Never forget why you started)"
+                android:paddingLeft="4sp"
+                android:paddingTop="10dp"
+                android:paddingRight="4sp"
+                android:paddingBottom="10dp"
+                android:textSize="15dp" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            app:cardCornerRadius="3dp">
+
+            <EditText
+                android:id="@+id/edit_text_location_post_it"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Enter the location (i.e Shimla)"
+                android:maxLines="1"
+                android:paddingLeft="4sp"
+                android:paddingTop="10dp"
+                android:paddingRight="4sp"
+                android:paddingBottom="10dp"
+                android:singleLine="true"
+                android:textSize="15dp" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            app:cardCornerRadius="3dp">
+
+            <EditText
+                android:id="@+id/edit_text_tags_post_it"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="#Tages (i.e #bollywood)"
+                android:paddingLeft="4sp"
+                android:paddingTop="10dp"
+                android:paddingRight="4sp"
+                android:paddingBottom="10dp"
+                android:textSize="15dp" />
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

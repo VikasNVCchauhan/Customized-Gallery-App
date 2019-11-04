@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1094313995920",
+    "firebase_url": "https://facetokimageuploaddemo.firebaseio.com",
+    "project_id": "facetokimageuploaddemo",
+    "storage_bucket": "facetokimageuploaddemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094313995920:android:8299c6095018fe59",
+        "android_client_info": {
+          "package_name": "com.example.facetokimageuploaddemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094313995920-64vk392s1torrjbccfvb3iavislod5nj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.facetokimageuploaddemo",
+            "certificate_hash": "c6e44b4d5f7e4f04fef9aa68e8f8533ca04ec142"
+          }
+        },
+        {
+          "client_id": "1094313995920-9igr29pqosbjt2io6bsqpm7mdcnmc0b0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYSe463tTHvOwMIqiXhXOMkYXL8Z01Q50"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1094313995920-9igr29pqosbjt2io6bsqpm7mdcnmc0b0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

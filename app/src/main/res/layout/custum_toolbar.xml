@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@null">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/profile_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_back_tool_bar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:elevation="5dp"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp" />
+
+            <Spinner
+                android:id="@+id/spinner_all_directories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/image_back_tool_bar"
+                android:background="@null"
+                android:dropDownWidth="170dp"
+                android:gravity="left"
+                android:spinnerMode="dropdown"
+                android:text="Gallery"
+                android:textColor="@android:color/black"
+                android:textSize="10sp">
+
+            </Spinner>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewPagerFragment">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_selected_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding=".5dp">
+
+    </android.support.v4.view.ViewPager>
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_cross_lines_selected_image_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/cross_line_layout" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/background_selected_images_count"
+        android:gravity="center"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp">
+
+        <TextView
+            android:id="@+id/text_view_counting_number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1sp"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="/"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:id="@+id/text_view_total_counting_selected_images"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="1sp"
+            android:gravity="center"
+            android:text="11"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floating_action_button_edit_images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_view_edit_view_pager"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/ic_edit_white_24dp"
+        app:backgroundTint="@color/colorRed"
+        app:fabSize="mini" />
+
+    <TextView
+        android:id="@+id/text_view_edit_view_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/floatation_action_button_camera"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="13dp"
+        android:text="Edit Image"
+        android:textColor="@android:color/white"
+        android:textSize="11sp" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatation_action_button_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_view_camera_view_pager"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/ic_camera_alt_white_24dp"
+        app:backgroundTint="@color/colorRed"
+        app:fabSize="mini" />
+
+    <TextView
+        android:id="@+id/text_view_camera_view_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/floatation_action_button_select_multiple"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="13dp"
+        android:text="Camera"
+        android:textColor="@android:color/white"
+        android:textSize="11sp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatation_action_button_select_multiple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_view_select_multiple_view_pager"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/ic_collections_white_24dp"
+        app:backgroundTint="@color/colorRed"
+        app:fabSize="mini" />
+
+    <TextView
+        android:id="@+id/text_view_select_multiple_view_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/floating_action_button_upload_images"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="13dp"
+        android:text="Select Multiple"
+        android:textColor="@android:color/white"
+        android:textSize="11sp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floating_action_button_upload_images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_view_upload_view_pager"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/ic_done_white_24dp"
+        app:backgroundTint="@color/colorRed"
+        app:fabSize="mini" />
+
+    <TextView
+        android:id="@+id/text_view_upload_view_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:text="Upload"
+        android:textColor="@android:color/white"
+        android:textSize="11sp" />
+</RelativeLayout>

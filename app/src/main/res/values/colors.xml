@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorBlue">#464AD8</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBlack">#202020</color>
+    <color name="colorOrange">#FF5C04</color>
+    <color name="colorRed"> #c4302b</color>
+    <color name="colorLightGray">#D3D3D3</color>
+    <color name="colorGray">#F5F5F5</color>
+    <color name="selectMultipleImagesBackground">#00202020</color>
+
+</resources>
